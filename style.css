@@ -28,22 +28,29 @@
 
 /* header section start  */
 
-.header-container{
-    width: 1160px;
+#header-container{
+    max-width: 1160px;
+    margin: 0 auto;
 }
 
 .navber{
     justify-content: space-between;
+    align-items: center;
     padding: 40px 0px 20px 0px;
 }
 
+#manu-bar{
+    font-size: 2rem;
+    display: none;
+}
 .nav-title{
     align-items: center;
+    gap: 10px;
 }
 
 .sub-home{
     color: rgb(254, 163, 1);
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 700;
     line-height: 30px;
 }
@@ -51,21 +58,21 @@
 
 .sub-about{
     color: rgb(1, 172, 253);
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 500;
     line-height: 30px;
 }
 
 .sub-facili{
     color: rgb(5, 212, 223);
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 500;
     line-height: 30px;
 }
 
 .sub-admission{
     color: rgb(93, 88, 239);
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 500;
     line-height: 30px;
 }
@@ -100,4 +107,87 @@ li{
     font-weight: 600;
     line-height: 30px;
     letter-spacing: 0%;
+}
+
+
+                                        /* hero section start */ 
+
+.hero-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3.2rem;
+}       
+
+.sub-container{
+    width: 640px;
+    height: 183px;
+}
+.sub-heading{
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 61px;
+}
+
+
+.heading-1{
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 61px;
+    color: rgb(254, 163, 1);
+}
+
+.vision-span{
+    color: rgb(1, 172, 253);
+}
+
+.hero-discription{
+    margin: 2rem 0;
+    color: rgb(17, 17, 17);
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 25px;
+}
+.hero-btn{
+    width: 197px;
+    height: 50px;
+    border-radius: 12px;
+    background: rgb(17, 17, 17);
+    padding: 10px;
+    border: none;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: 0%;
+}
+
+
+@media  screen and (max-width: 560px) {
+
+    .navber{
+        padding: 12px 16px;
+        border-bottom: 1px solid #FEA301;
+       
+    }
+    #manu-bar{
+        display: block;
+       
+    }
+    .nav-links,.H1-heading,.nav-btn{
+        display: none;
+
+    }
+
+    .hero-container{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .sub-container{
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+        font-size: 1.8rem;
+    }
 }
