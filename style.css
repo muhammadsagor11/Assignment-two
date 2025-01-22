@@ -11,8 +11,12 @@
     max-width: 1440px;
     height: auto;
     margin: 0 auto;
+
 }
 
+/* body{
+    overflow: hidden;
+} */
 /* sheard styles*/
 
 .flex-item {
@@ -125,8 +129,16 @@ li {
     margin-bottom: 60px;
 }
 
+.hero-img{
+    width: 40%;
+
+}
+
+.hero-img img{
+    width: 100%;
+}
 .sub-container {
-    width: 640px;
+    max-width: 640px;
     height: 183px;
 }
 
@@ -171,16 +183,16 @@ li {
 }
 
 .nav-btn:hover,
-.hero-btn:hover{
+.hero-btn:hover {
     background-color: #4e9f87de;
     color: #deffdd;
     outline: none;
     cursor: pointer;
-   
+
 }
 
 
-.sub-marquee{
+.sub-marquee {
     background-color: antiquewhite;
     font-size: 1.3rem;
     padding: 10px;
@@ -412,8 +424,7 @@ li {
     height: 100%;
 }
 
-.storie-img 
-.time {
+.storie-img .time {
     position: absolute;
     left: 38px;
     bottom: 0;
@@ -442,7 +453,7 @@ li {
 
 
 
-                                                        /* footer section  */
+/* footer section  */
 
 
 
@@ -464,7 +475,7 @@ footer {
 }
 
 
-.footer-column:nth-child(1){
+.footer-column:nth-child(1) {
     width: 500px;
 }
 
@@ -499,13 +510,14 @@ footer {
     margin-bottom: 32px;
 }
 
-.footer-menu li{
+.footer-menu li {
     margin-bottom: 20px;
 }
+
 .footer-menu li a {
     margin-bottom: 15px;
     text-decoration: none;
-   
+
 }
 
 .footer-menu a {
@@ -538,9 +550,9 @@ footer {
 
     .nav-links,
     .H1-heading,
-    .nav-btn, 
+    .nav-btn,
     .arrow-icom,
-    .hide-card{
+    .hide-card {
         display: none;
 
     }
@@ -548,7 +560,10 @@ footer {
     .hero-container {
         flex-direction: column-reverse;
         align-items: center;
+        margin: 0 10px;
         margin-bottom: 10px;
+        
+
     }
 
     .sub-container {
@@ -575,28 +590,44 @@ footer {
         display: none;
     }
 
+    .hero-img{
+        width: calc(100% - 10px);
+    }
 
-   
+    .hero-img img{
+        width: 100%;
+    }
 
-   .card{
-    width: 100%;
-    margin: 0;
-   }
+    .card {
+        width: 100%;
+        margin: 0;
+    }
 
-   .stories-container{
-    margin: 15px;
-   }
+    .stories-container {
+        margin: 15px;
+    }
 
-   .story-btn{
-    margin-top: 50px;
-   }
-   footer{
-    height: auto;
+    .story-btn {
+        margin-top: 50px;
+    }
 
-   }
 
-   .footer-container{
-    grid-template-columns: repeat(1,1fr);
-    margin-left: 15px;
-   }
+    .storie-img .time {
+        left: 15px;
+        font-size: .6rem;
+        font-weight: 500;
+        padding: 10px 12px;
+    }
+
+    footer {
+        height: auto;
+
+    }
+
+    .footer-container {
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: 15px;
+    }
+
+
 }
